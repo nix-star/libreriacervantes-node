@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Librería Cervantes</title>
+</head>
+<body>
+    <header>
+        <h1>Librería Cervantes</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a class="{{#if isHome}}actual{{/if}}" href="/">Inicio</a></li>
+            <li><a class="{{#if isDestacados}}actual{{/if}}" href="/destacados">Destacados</a></li>
+            <li><a class="{{#if isNovedades}}actual{{/if}}" href="/novedades">Novedades</a></li>
+            <li><a class="{{#if isBusqueda}}actual{{/if}}" href="/busqueda">Búsqueda</a></li>
+        </ul>
+    </nav>
+    {{{body}}}
+    {{!-- <aside class="sitios-externos">
+        <strong>Enlaces externos</strong>
+        <ul>
+            <li><a href="https://www.ebookelo.com/" target="_blank">Ebookelo</a></li>
+            <li><a href="https://lectulandia.to/" target="_blank">Lectulandia</a></li>
+            <li><a href="https://ebiblioteca.org/" target="_blank">e-Biblioteca</a></li>
+            <li><a href="http://www.cervantesvirtual.com/" target="_blank">Biblioteca Virtual Miguel de Cervantes</a></li>
+        </ul>
+    </aside> --}}
+
+    <footer class="texto-alineado">Diseñado por: Nicolás Chiesa::2021</footer>
+</body>
+</html>

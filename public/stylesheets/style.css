@@ -1,0 +1,430 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url(../fonts/OpenSans-Light.ttf);
+@import url(../fonts/OpenSans-Regular.ttf);
+@import url(../fonts/OpenSans-Bold.ttf);
+
+html {
+    background-image: url(../images/ebookelo.png);
+}
+
+body {
+    max-width: 1152px;
+    margin: auto;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url(../images/banner-libros.jpg);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+h1 {
+    /* display: inline-block; */
+    background-color:#800040;
+    color: cornsilk;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 1.4em;
+    text-align: center;
+    opacity: 0.8;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: cornsilk;
+    border: 1px solid cornsilk;
+    border-left: 0;
+    height: 42px;
+    width: 92px;
+    box-sizing: border-box;
+    font-size: 92%;
+}
+
+nav ul li:first-child a {
+    border-left: 1px solid cornsilk;
+}
+
+nav ul li a.actual {
+    color: wheat;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: cornsilk;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+main div {
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: lightsalmon;
+    text-align: center;
+    clear: both;
+    height: 42px;
+    box-sizing: border-box;
+    font-size: 0.9em;
+}
+
+.iframe {
+    clear: both;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.texto-alineado, nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#home h2, #destacados h2, #novedades h2, #search h2{
+    background-color: skyblue;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    height: 42px;
+    box-sizing: border-box;
+    color:dodgerblue;
+}
+
+
+/*home*/
+#home div, #home p, #home figure {
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    max-width: 1024px;
+    margin: auto;
+}
+
+#home h2 {
+    /* background-color: transparent; */
+    /* background-color: lightgoldenrodyellow; */
+    background-color: wheat;
+    margin: auto -64px;
+}
+
+#home div, aside {
+    padding: 1em;
+}
+
+#home .left {
+    width: 67%;
+    float: left;
+}
+
+#home .left p {
+    text-align: justify;
+}
+
+#home .left p::first-letter {
+    float: left;
+    font-size: 2em;
+    padding-right: 2px;
+}
+
+#home .right {
+    background-color: inherit;
+    max-width: 30%;
+    float: right;
+}
+
+#home .right img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+#home .right figcaption {
+    padding: 3px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#home .right figcaption strong {
+    display: block;
+    padding-bottom: 4px;
+    font-size: 120%;
+}
+
+aside.sitios-externos {
+    clear: both;
+    position: relative;
+    /* margin-left-max: 64px; */
+    /* top: 0; */
+    font-size: 0.95em;
+    max-width: 200px;
+    border: 5px double black;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+aside.sitios-externos ul {
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding-left: 1.5em;
+    list-style-type: square;
+}
+
+aside.sitios-externos a {
+    text-decoration: none;
+    color: blue;
+}
+
+aside.sitios-externos a:hover {
+    opacity: 0.6;
+    color: cornflowerblue;
+}
+
+/*destacados*/
+#destacados p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#destacados p:first-child {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#destacados .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+
+#destacados .contenedor figure {
+    width: 256px;
+    border: 1px solid black;
+    background-color: skyblue;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+#destacados .contenedor figure img {
+    width: 100%;
+}
+
+#destacados .contenedor figure figcaption p {
+    font-size: 95%;
+}
+
+
+/*novedades*/
+#novedades .contenedor {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* align-content: center; */
+    justify-content: space-evenly;
+    /* margin-bottom: 1em; */
+}
+
+#novedades .contenedor .nuevo-libro {
+    border: 4px groove grey;
+    margin-bottom: 1em;
+    max-width: 480px;
+}
+
+#novedades .contenedor .nuevo-libro figure {
+    height: 96px;
+    border: 1px solid grey;
+    margin: 0.5em;
+}
+
+#novedades .contenedor .nuevo-libro figure img {
+    height: 100%;
+    float: left;
+}
+
+#novedades .contenedor .nuevo-libro figure figcaption {
+    position: relative;
+    left: 8px;
+    top: 4px;
+}
+
+#novedades .contenedor .nuevo-libro figcaption dl {
+    margin: 0;
+    font-size: 95%;
+}
+
+#novedades .contenedor .nuevo-libro figcaption dl dt {
+    font-weight: bold;
+}
+
+#novedades .contenedor .nuevo-libro figcaption dl dd {
+    position: relative;
+    left: 16px;
+}
+
+#novedades .contenedor .nuevo-libro figcaption dl dd:first-of-type {
+    font-style: italic;
+}
+
+#novedades p.sinopsis-libro {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 85%;
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    padding-top: 3px;
+    padding-bottom: 1em;
+}
+
+#novedades .nuevo-libro h3 {
+    margin: 0.5em 1em;
+    font-size: 90%;
+}
+
+
+/*search*/
+#search-form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    max-width: 30%;
+    margin: auto;
+    margin-bottom: 1em;
+    background-color:dodgerblue;
+    border-radius: 20px;
+    /* border: 5px groove rgba(128, 0, 64, 0.7); */
+    border: 3px double lightgoldenrodyellow;
+}
+
+#search-form label {
+    color: gainsboro;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+#search-form button {
+    /* background-color:  rgba(128, 0, 64, 1); */
+    background-color: grey;
+    color: white;
+    padding: 0.5em;
+}
+/**/
+
+
+/*media query*/
+@media (max-width: 1082px){
+    #novedades .contenedor .nuevo-libro {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 760px){
+    #search-form {
+        min-width: 240px;
+    }
+}
+
+@media (max-width: 640px){
+    #home h2 {
+        margin: 0;
+    }
+
+    #home .left, #home .right {
+        margin: auto;
+        float: none;
+        width: 90%;
+        font-size: 95%;
+    }
+
+    #home .right {
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 380px){
+    body {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        width: 100%;
+        border: 1px solid cornsilk;
+        border-bottom: 0;
+        padding-inline-start: 0;
+    }
+
+    nav ul li:last-child a {
+        border-bottom: 1px solid cornsilk;
+    }
+
+    #novedades .contenedor {
+        width: 99%;
+    }
+
+    #novedades .nuevo-libro, .texto-alineado {
+        font-stretch: condensed;
+        font-size: 1em !important;
+    }
+
+    #search-form * {
+        display: block;
+        width: 95%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #search-form button {
+        width: initial;
+        margin: auto;
+    }
+
+    footer.texto-alineado {
+        font-size: 85% !important;
+    }
+}
+
+@media (max-width: 256px){
+    h1 {
+        font-size: 1.75em;
+    }
+
+    #novedades .nuevo-libro, .texto-alineado {
+        font-size: 0.95em !important;
+    }
+
+    #search-form {
+        min-width: 98%;
+    }
+}
