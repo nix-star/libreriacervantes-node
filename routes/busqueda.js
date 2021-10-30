@@ -33,11 +33,9 @@ router.post('/', async(req, res, next)=> {
 
   var info = transport.sendMail(obj);
 
-  
-
   //Aquí se renderizaría la lista de libros
   res.render('busqueda', {  
-    message: '',
+    message: 'Resultado: ',
   });
 });
 

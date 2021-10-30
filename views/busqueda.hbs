@@ -22,11 +22,6 @@
             <input type="number" id="search-form__number" min=0 name="isbn">
         </p>
 
-        <!-- <p>
-            <label for="search-form__puntuacion">Puntuacion: </label>
-            0<input type="range" step="1" min="0" max="5">5
-        </p> -->
-
         <p>
             <label for="search-form__puntuacion">Puntuacion: </label>
             <select name="puntuacion" id="search-form__puntuacion">
@@ -44,16 +39,10 @@
         </p>
 
     </form>
-    
-    <script>
-        var $form = document.getElementById('search-form');
-        $form.addEventListener('submit', (e)=>{
-            e.preventDefault();
-            $form.style.display = 'none';
-        });
-    </script>
 
     {{#if message}}
+        <script>document.querySelector('#search-form').style.display = 'none'</script>
         <p>{{message}}</p>
     {{/if}}
+
 </main>
